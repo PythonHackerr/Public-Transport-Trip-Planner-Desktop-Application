@@ -1,0 +1,10 @@
+.py*
+__py*
+.vs*
+notes
+src/views/ui_*.py
+.idea
+data/user_config.conf
+/build/
+/data/
+/dist/
