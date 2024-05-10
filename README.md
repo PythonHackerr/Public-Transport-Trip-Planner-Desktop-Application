@@ -1,46 +1,42 @@
-# Projekt PAP - zespół 14
+# "PA jak Podjadę"
 
-## "PA jak Podjadę"
-
-> ### Skład zespołu:
-> Bartosz Han 318658
+> ### Team:
+> Mykhailo Marfenko
 >
-> Mykhailo Marfenko 323558
+> Bartosz Han 
 >
-> Igor Matynia 318693
+> Igor Matynia
 
->Prowadzący zespołu: Michał Chwesiuk
+## Topic and description of the project
+The aim of our project is to create an application that will help users plan their trips by public transport in the Warsaw agglomeration. In particular, our application is intended to enable the traveler to:
+  - Displaying timetables for a given line
+  - Finding the fastest possible connection between two stops (finding the most optimal route from one point to another and directing the user accordingly)
+  - Displaying a map of the stop complex selected by the user
+  - Showing the delay of public transport vehicles
+  - Showing a map of connections from the selected stop (showing the route of all lines that pass through the selected stop)
 
-## Temat i opis projektu
-Celem naszego projektu jest stworzenie aplikacji, która ma pomóc użytkownikowi w planowaniu swoich podróży komunikacją miejską w aglomeracji warszawskiej. W szczególności, nasza aplikacja ma umożliwić podróżnemu:
- - Wyświetlenie rozkładów jazdy dla danej linii
- - Wyszukanie jak najszybszego połączenia pomiędzy dwoma przystankami (znalezienie najoptymalniejszej trasy z jednego punktu do drugiego i odpowiednie pokierowanie użytkownika)
- - Wyświetlenie mapy wybranego przez użytkownika zespołu przystankowego
- - Pokazywanie opóźnienia pojazdów komunikacji publicznej
- - Pokazanie mapy połączeń z wybranego przystanku (pokazanie trasy wszystkich linii, które przejeżdżają przez wybrany przystanek)
+## Use cases
 
-## Przypadki użytkowania
+The application is intended to facilitate planning a trip by public transport, finding information about timetables, stops and departure times needed for efficient use of public transport. It will also help you find your way around large and complex sets of stops when you don't know exactly which stop you need to go to. The main task of the application is to help prepare a travel route for the user and provide him with the most important information (such as a departure table, indication of the most optimal transfer, or indication of the exact stop to go to to take a given line) so that he can freely travel and use public transport without any problems.
 
-Aplikacja ma na celu ułatwienie planowania podróży komunikacją miejską, wyszukiwanie informacji o rozkładach, przystankach czy czasach odjazdów, potrzebnych do sprawnego poruszania się transportem publicznym. Pomoże także w orientacji na rozległych i skomplikowanych zespołach przystanków, gdy nie wiadomo na który dokładnie przystanek trzeba się udać. Głównym zadaniem aplikacji jest pomoc w przygotowaniu trasy podróży dla użytkownika, oraz przekazanie mu najważniejszych informacji (takich jak tabela odjazdów, wskazanie najoptymalniejszej przesiadki, czy wskazanie, na który dokładnie przystanek należy się udać, aby pojechać daną linią) tak, aby podczas podróży mógł swobodnie i bez żadnych problemów posługiwać się komunikacją miejską.
+## Implementation assumptions and technologies
 
-## Założenia realizacji i technologie
+As part of this project, we created the following implementation assumptions and selected the following technologies:
+- our application will be a desktop application
+- we chose Python as the main programming language
+- to create a user interface, we will use one of the Python libraries - PySide2
+- the OracleDB database will be used to create a timetable database needed to properly provide information about public transport, and the data will be taken from the website of the Public Transport Authority in Warsaw, or from a similar interpreted text file provided by the same company.
+- In order to create appropriate maps, the Google Maps or OpenStreetMap API will be used
 
-W ramach tego projektu, stworzyliśmy nastepujące założenia realizaji i wybraliśmy następujące technologie:
-- nassza aplikacja będzie aplikacją desktopową
-- jako główny język programowania wybraliśmy język Python
-- w celu stworzenia interfeju użytkownika zastosujemy jedną z bibliotek to Pythona - PySide2
-- do stworzenia bazy danych rozkładowych potrzebnych do prawidłowego przekazywania informacji o transporcie publicznym zostanie wykorzystana baza danych OracleDB, a dane będą wzięte ze strony Zarządu Transportu Miejskiego w Warszawie, lub z analogicznego interpretowanego pliku tekstowego udostępnianego przez tą samą spółkę.
-- W celu tworzenia odpowiednich map, zostanie wykorzystane api do map Google lub OpenStreetMap
-
-## Ogólny schemat aplikacji
-- Linie autobusowe/tramwajowe/metra/skm
-    - -> Po wyborze linii, można wybrać przystanek
-        - ->Wyświetla się wtedy rozkład jazdy
-            - ->Dla każdej godziny w rozkładzie można podejrzeć czasy przyjazdu na inne przystanki dla danego autobusu
-        - ->W tym miejscu można też wyświetlić zespół przystankowy
-        - ->Wyświetlanie gdzie można dojechać z tego miejsca
-- Szukanie połączenia
--  Podejrzenie spóźnień dla danego autobusu na danym przystanku o danej porze
+## General application diagram
+- Bus/tram/metro/stationary lines
+     - -> After selecting the line, you can select the stop
+         - ->The timetable is then displayed
+             - ->For each hour in the timetable, you can view arrival times at other stops for a given bus
+         - ->The bus stop complex can also be displayed here
+         - ->Display where you can get from this place
+- Searching for a connection
+- Suspected delays for a given bus at a given stop at a given time
 
 ## Dependencies:
 
