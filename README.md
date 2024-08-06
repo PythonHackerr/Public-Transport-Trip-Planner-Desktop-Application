@@ -7,10 +7,9 @@
 >
 > Igor Matynia
 
-![image](https://github.com/user-attachments/assets/cd082db1-7787-4abf-ae07-515277be6160)
-![image](https://github.com/user-attachments/assets/f151c2bb-d4a4-49df-8e7b-affae57bd0e0)
-![image](https://github.com/user-attachments/assets/660e20e2-073d-4ebc-aa6b-4af84bf05eaf)
-![image](https://github.com/user-attachments/assets/df403042-ed6f-4865-aa7f-224cf8b5def9)
+![image](https://github.com/user-attachments/assets/f151c2bb-d4a4-49df-8e7b-affae57bd0e0) ![image](https://github.com/user-attachments/assets/660e20e2-073d-4ebc-aa6b-4af84bf05eaf) ![image](https://github.com/user-attachments/assets/df403042-ed6f-4865-aa7f-224cf8b5def9)
+
+
 
 
 ## Topic and description of the project
